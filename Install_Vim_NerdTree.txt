@@ -1,0 +1,24 @@
+INSTALL NERDTREE ON VIM (in Linux)
+***********************************
+
+> cd ~
+> mkdir .vim
+> mkdir .vim/autoload
+> mkdir .vim/bundle
+> curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+> cd ~/.vim/bundle
+> git clone https://github.com/preservim/nerdtree.git ~/.vim/bundle/nerdtree
+> cd
+> vim ~/.vimrc
+--> ..
+--> call pathogen#infect()
+--> syntax on
+--> filetype plugin indent on
+--> 
+--> :wq
+> vim
+--> :helptags ~/.vim/bundle/nerdtree/doc/
+--> :help NERDTree.txt
+--> :NERDTree
+--> :NERDTreeClose
+--> :q
